@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Popup</title>
+</head>
+<body>
+    <!-- кнопка Начать -->
+    <div class="button-container">
+        <button class="button-container__button">Начать</button>
+    </div>
+    <!-- попап окно -->
+    <div class="popup-block__background hidden">
+        <div class="popup-block">
+            <h2>Введите данные</h2>
+            <form action="" class="form-block">
+                <input type="email" placeholder="email" class="popup-block__input email" value="123">
+                <input type="tel" placeholder="номер телефона" class="popup-block__input phone" value="1323">
+                <input type="text" placeholder="Имя" class="popup-block__input firstName" value="1sdfsd23">
+                <input type="text" placeholder="Фамилия" class="popup-block__input lastName" value="123sdfsdf">
+                <input type="text" placeholder="Возраст" class="popup-block__input age" value="123dkfljgnk"> 
+                
+            </form>
+            <button type="submit" class="popup-block__submit-button">Отправить</button>
+        </div>
+    </div>
+    <!-- темплейт -->
+    <div id="data-form">
+        <div class="popup-data">
+            <ul class="popup-data__list">
+                <!-- поле для жсон строки -->
+                <li class="json-text"></li> 
+                <!-- контейнер для вывода всех полей из инпут -->
+                <ul class="data-container">
+                </ul>
+            </ul>
+            
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
