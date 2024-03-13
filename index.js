@@ -1,7 +1,7 @@
 
-const openPopupButton = document.querySelector('.button-container__button'); // выбираеми кнопку
-const popupBlock = document.querySelector('.popup-block__background');// выбираем попап
-const popupSubmit = document.querySelector('.popup-block__submit-button'); // выбрали кнопку отправить
+const openPopupButton = document.querySelector('.button-container__button');
+const popupBlock = document.querySelector('.popup-block__background');
+const popupSubmit = document.querySelector('.popup-block__submit-button');
 const dataContainer = document.querySelector('.data-container');
 const jsonContaineer = document.querySelector('.json-text');
 const dataOfForm = {
@@ -11,14 +11,14 @@ const dataOfForm = {
     lastName:"",
     age:""
 };
-let json; // переменная для жсон
+let json; 
 
 
-//  вешаем слушатель событий на кнопку
+
 openPopupButton.addEventListener('click',()=>{
     popupBlock.classList.toggle("hidden");
 });
-// слушатель событий на фоне сработает только если клик на него, а не на форму
+
 popupBlock.addEventListener('click', (e)=>{
     if(e.target === popupBlock){
         popupBlock.classList.toggle("hidden");
@@ -54,10 +54,10 @@ popupSubmit.addEventListener('click',function(){
         dataContainer.appendChild(newElement);
     });
 
-    json = JSON.stringify(dataOfForm); // объект в жсон
-    jsonContaineer.innerHTML = `json строка: ${json}`; // вывод жсона
+    json = JSON.stringify(dataOfForm); 
+    jsonContaineer.innerHTML = `json строка: ${json}`; 
     
-    popupBlock.classList.toggle("hidden"); // выключаем попап
+    popupBlock.classList.toggle("hidden"); 
 });
 
 
