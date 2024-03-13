@@ -130,7 +130,7 @@ legend {
 }
 /* стилизация блока попапа */
 .popup-block{
-    max-width: 500px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -138,6 +138,11 @@ legend {
     background-color: rgb(185, 205, 226);
     padding: 15px;
     border-radius: 15px;
+}
+@media (max-width: 600px){
+    .popup-block{
+        width: 320px;
+    }
 }
 /* заголовок в попапе */
 h2{
@@ -197,4 +202,7 @@ form{
     display: flex;
     flex-direction: column;
     gap:5px;
+}
+li{
+    overflow-wrap: anywhere;
 }
