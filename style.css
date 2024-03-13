@@ -175,18 +175,26 @@ form{
 
 .data-form{
     margin-top:25px;
+    
 }
 .popup-data{
     display: flex;
     justify-content: center;
     margin-top: 25px;
+
 }
 .popup-data__list{
     display: flex;
     flex-direction: column;
     gap:10px;
     width: 500px;
+    word-wrap: break-word;
+    border: solid 1px black;
+    padding: 15px;
+    border-radius: 30px;
 }
-li{
-    
+.data-container{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
 }
